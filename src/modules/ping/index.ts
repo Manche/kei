@@ -19,6 +19,11 @@ export default class extends Module {
 				immediate: true
 			});
 			return true;
+		} else if (msg.text && msg.text.includes('ﾏﾌ')) {
+			msg.reply('ﾓﾌｯ', {
+				immediate: true
+			});
+			return true;
 		} else {
 			return false;
 		}

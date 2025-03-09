@@ -12,7 +12,7 @@ export default {
 
 		helloNight: name => name ? `こんばんは、${name}♪` : `こんばんは♪`,
 
-		goodMorning: (tension, name) => name ? `おはようございます、${name}！${tension}` : `おはようございます！${tension}`,
+		goodMorning: (tension, name) => name ? `おはよ～、${name}！${tension}` : `おはよ！${tension}`,
 
 		/*
 		goodMorning: {
@@ -22,22 +22,22 @@ export default {
 		},
 */
 
-		goodNight: name => name ? `おやすみなさい、${name}！` : 'おやすみなさい！',
+		goodNight: name => name ? `おやすみ～、${name}！` : 'おやすみ！',
 
-		omedeto: name => name ? `ありがとうございます、${name}♪` : 'ありがとうございます♪',
+		omedeto: name => name ? `ありがと～、${name}♪` : 'ありがと～',
 
 		erait: {
 			general: name => name ? [
-				`${name}、今日もえらいです！`,
-				`${name}、今日もえらいですよ～♪`
+				`${name}、今日もえらい！`,
+				`${name}、今日もえらいよ～♪`
 			] : [
-				`今日もえらいです！`,
-				`今日もえらいですよ～♪`
+				`今日もえらい！`,
+				`今日もえらいよ～♪`
 			],
 
 			specify: (thing, name) => name ? [
-				`${name}、${thing}てえらいです！`,
-				`${name}、${thing}てえらいですよ～♪`
+				`${name}、${thing}てえらい！`,
+				`${name}、${thing}てえらいよ～♪`
 			] : [
 				`${thing}てえらいです！`,
 				`${thing}てえらいですよ～♪`
@@ -47,23 +47,23 @@ export default {
 				`${name}、${thing}でえらいです！`,
 				`${name}、${thing}でえらいですよ～♪`
 			] : [
-				`${thing}でえらいです！`,
-				`${thing}でえらいですよ～♪`
+				`${thing}でえらい！`,
+				`${thing}でえらいよ～♪`
 			],
 		},
 
 		okaeri: {
 			love: name => name ? [
-				`おかえりなさい、${name}♪`,
+				`おかえり、${name}♪`,
 				`おかえりなさいませっ、${name}っ。`
 			] : [
-				'おかえりなさい♪',
+				'おかえり♪',
 				'おかえりなさいませっ、ご主人様っ。'
 			],
 
 			love2: name => name ? `おかえりなさいませ♡♡♡${name}っっ♡♡♡♡♡` : 'おかえりなさいませ♡♡♡ご主人様っっ♡♡♡♡♡',
 
-			normal: name => name ? `おかえりなさい、${name}！` : 'おかえりなさい！',
+			normal: name => name ? `おかえり、${name}！` : 'おかえり！',
 		},
 
 		itterassyai: {
@@ -72,12 +72,12 @@ export default {
 			normal: name => name ? `いってらっしゃい、${name}！` : 'いってらっしゃい！',
 		},
 
-		tooLong: '長すぎる気がします...',
+		tooLong: 'ちょっと長いかも',
 
-		invalidName: '発音が難しい気がします',
+		invalidName: 'よめない！',
 
 		nadenade: {
-			normal: 'ひゃっ…！ びっくりしました',
+			normal: ['ひゃっ！', 'あぅ'],
 
 			love2: ['わわっ… 恥ずかしいです', 'あうぅ… 恥ずかしいです…', 'ふやぁ…？'],
 
@@ -151,6 +151,8 @@ export default {
 		transferFailed: 'うーん、合言葉が間違ってませんか...？',
 
 		transferDone: name => name ? `はっ...！ おかえりなさい、${name}！` : `はっ...！ おかえりなさい！`,
+
+		ablob_spinfast: ':ablob_spinfast:',
 	},
 
 	keyword: {
@@ -402,6 +404,7 @@ export default {
 
 	noting: {
 		notes: [
+			'',
 			'ゴロゴロ…',
 			'ちょっと眠いです',
 			'いいですよ？',

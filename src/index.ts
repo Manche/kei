@@ -40,12 +40,13 @@ console.log('   __    ____  _____  ___ ');
 console.log('  /__\\  (_  _)(  _  )/ __)');
 console.log(' /(__)\\  _)(_  )(_)( \\__ \\');
 console.log('(__)(__)(____)(_____)(___/\n');
+console.log('forked from misskey-ai.');
 
 function log(msg: string): void {
 	_log(`[Boot]: ${msg}`);
 }
 
-log(chalk.bold(`Ai v${pkg._v}`));
+log(chalk.bold(`Kai v${pkg._v}`));
 
 process.on('uncaughtException', err => {
 	try {
@@ -69,7 +70,7 @@ promiseRetry(retry => {
 	const acct = `@${account.username}`;
 	log(chalk.green(`Account fetched successfully: ${chalk.underline(acct)}`));
 
-	log('Starting AiOS...');
+	log('Starting KaiOS...');
 
 	// 藍起動
 	new 藍(account, [

@@ -33,7 +33,8 @@ export default class extends Module {
 			this.ote(msg) ||
 			this.ponkotu(msg) ||
 			this.rmrf(msg) ||
-			this.shutdown(msg)
+			this.shutdown(msg) ||
+			this.ablob_spinfast(msg)
 		);
 	}
 
@@ -304,6 +305,17 @@ export default class extends Module {
 
 		return {
 			reaction: 'confused'
+		};
+	}
+
+	@bindThis
+	private ablob_spinfast(msg: Message): boolean | HandlerResult {
+		if (!msg.includes(['ablob_spinfast'])) return false;
+
+		msg.reply(serifs.core.ablob_spinfast + serifs.core.ablob_spinfast + serifs.core.ablob_spinfast);
+
+		return {
+			reaction: 'ablob_spinfast'
 		};
 	}
 }
